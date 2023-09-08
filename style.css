@@ -32,3 +32,35 @@ nav ul li {
     font-weight: bolder;
     font-size: 1.3rem;
 }
+.container{
+    min-height: 67vh;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 15px;
+    padding: 34px;
+}
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black; 
+    color: aliceblue;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column-reverse;
+
+}
+.icons{
+    margin-bottom: 20px;
+}
+.icons i{
+    cursor: pointer;
+}
+#myProgressBar{
+    width: 80vh;
+    
+}
