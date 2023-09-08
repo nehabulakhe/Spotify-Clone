@@ -11,3 +11,24 @@ body{
 nav{
     font-family: 'Roboto', sans-serif;
 }
+nav ul{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    list-style-type: none;
+    height: 65px;
+    color: white;
+}
+nav ul li {
+    padding: 0 12px;
+}
+.brand img{
+    width: 48px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
