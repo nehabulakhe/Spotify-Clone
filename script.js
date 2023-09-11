@@ -4,13 +4,14 @@ let songIndex=0;
 let masterPlay= document.getElementById('masterPlay');
 let myProgressBar= document.getElementById('myProgressBar');
 let gif= document.getElementById('gif');
+let songItems=Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
     
     {songName:"Let Me Love You",filePath: "song/1.mp3",coverPath: "covers/1.jpg" },
     {songName:"Tere Hawale",filePath: "song/2.mp3",coverPath: "covers/2.jpg" },
     {songName:"Heeriye Heeriye",filePath: "song/3.mp3",coverPath: "covers/3.jpg" },
-    {songName:"Love Me Like You Do",filePath: "song/4.mp3",coverPath: "covers/4jpg" },
+    {songName:"Love Me Like You Do",filePath: "song/4.mp3",coverPath: "covers/4.jpg" },
     {songName:"Love is Gone",filePath: "song/5.mp3",coverPath: "covers/5.jpg" },
     {songName:"Stereo Love",filePath: "song/6.mp3",coverPath: "covers/6.jpg" },
     {songName:"Tum Hi Ho",filePath: "song/7.mp3",coverPath: "covers/7.jpg" },
@@ -18,6 +19,10 @@ let songs = [
     {songName:"With You",filePath: "song/9.mp3",coverPath: "covers/9.jpg" }
 ]
 
+songItems.forEach((element, i)=>{ 
+    element.getElementsByTagName("img")[0].src = songs[i].coverPath; 
+    element.getElementsByClassName("songName")[0].innerText = songs[i].songName; 
+})
 //audioElement.play();
 
 //handle play pause
