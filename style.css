@@ -33,7 +33,7 @@ nav ul li {
     font-size: 1.3rem;
 }
 .container{
-    min-height: 67vh;
+    min-height: 63vh;
     background-color: black;
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -64,4 +64,34 @@ nav ul li {
 #myProgressBar{
     width: 80vh;
     
+}
+.songItemContainer{
+    margin-top:74px ;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0px ;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0px 23px;
+}
+.timestamp{
+    margin: 0 23px;
+   cursor: pointer; 
+}
+
+.timestamp i{
+   cursor: pointer; 
+}
+.songInfo
+{
+    margin: 10px 0px;
 }
