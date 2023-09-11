@@ -62,7 +62,8 @@ nav ul li {
     cursor: pointer;
 }
 #myProgressBar{
-    width: 80vh;
+    width: 80vw;
+    cursor: pointer;
     
 }
 .songItemContainer{
@@ -93,5 +94,12 @@ nav ul li {
 }
 .songInfo
 {
-    margin: 10px 0px;
+   position: absolute;
+   left : 10vh;
+   font-family: 'Roboto', sans-serif;
+}
+.songInfo img
+{
+   opacity: 0;
+   transition: opacity 0.4s ease-in;
 }
